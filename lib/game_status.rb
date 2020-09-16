@@ -22,6 +22,5 @@ def won?(board)
     counter = 0
     board.any?{|position| position == WIN_COMBINATIONS[]}
     counter += 1
-    return win_combination
   end
 end
