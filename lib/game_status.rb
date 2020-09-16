@@ -15,3 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6],
 ]
 
+def won?(board)
+board.any? == WIN_COMBINATIONS
+  true
+end
