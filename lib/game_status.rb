@@ -15,11 +15,20 @@ WIN_COMBINATIONS = [
   [2,4,6],
 ]
 
+#def won?(board)
+#  WIN_COMBINATIONS.detect do |win|
+#    board[win[0]] == board[win[1]]
+ 
+ 
+ # board.all?{|positions| positions != " "}
+#  board.all?{|positions| positions == ("X" ||"O")}
+#end
+
+
 def won?(board)
-  WIN_COMBINATIONS.detect do |win|
-    board[win[0]] == board[win[1]]
- 
- 
-  board.all?{|positions| positions != " "}
-  board.all?{|positions| positions == ("X" ||"O")}
+  WIN_COMBINATIONS.detect do |combo|
+    board[combo[0]] == board[combo[1]] &&
+    board[combo[1]] == board[combo[2]] &&
+    position_taken?(board, combo[0])
+  end
 end
