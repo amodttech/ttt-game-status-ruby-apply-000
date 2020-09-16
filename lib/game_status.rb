@@ -19,5 +19,4 @@ def won?(board)
     board.select do |positions|
         positions == WIN_COMBINATIONS
         end
-    end
 end
