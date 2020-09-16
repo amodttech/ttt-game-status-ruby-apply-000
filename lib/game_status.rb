@@ -16,6 +16,5 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-board.any? == WIN_COMBINATIONS
-  true
+  
 end
