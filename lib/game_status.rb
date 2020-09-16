@@ -16,6 +16,6 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  board.detect?{|positions| positions == WIN_COMBINATIONS}
+  board.any?{|positions| positions == WIN_COMBINATIONS}
   
 end
