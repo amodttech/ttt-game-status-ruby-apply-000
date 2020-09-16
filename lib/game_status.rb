@@ -15,8 +15,8 @@ WIN_COMBINATIONS = [
   [2,4,6],
 ]
 
-def won?(board, index)
-    if position_taken? == TRUE
+def won?(board)
+    if position_taken?(board, index) == TRUE
       FALSE
     end
 end
