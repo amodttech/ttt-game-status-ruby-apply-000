@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-    if position_taken? == true
+    if position_taken?(board, index) == true
       false
     end
 end
