@@ -16,7 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-    board.select do |positions|
+    if position_taken == false
+      board.select do |positions|
         positions == WIN_COMBINATIONS
         end
+      end
 end
