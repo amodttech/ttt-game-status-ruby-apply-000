@@ -18,5 +18,5 @@ WIN_COMBINATIONS = [
 def won?(board)
   board.all?{|positions| positions != " "}
   board.all?{|positions| positions == ("X" ||"O")}
-  board.any?{|positions| positions == WIN_COMBINATIONS}
+  for win_combination in WIN_COMBINATIONS do
 end
