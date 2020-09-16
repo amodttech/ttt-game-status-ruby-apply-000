@@ -21,4 +21,5 @@ def won?(board)
   for win_combination in WIN_COMBINATIONS do
     board.any?{|position| position == WIN_COMBINATIONS}
     return win_combination
+  end
 end
