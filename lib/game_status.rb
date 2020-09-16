@@ -17,4 +17,10 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   board.select{|positions| positions == WIN_COMBINATIONS}
+  
+  
+  
+  
+  
+  
 end
