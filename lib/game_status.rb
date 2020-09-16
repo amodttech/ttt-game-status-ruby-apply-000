@@ -16,11 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  for win_combination in WIN_COMBINATIONS do
-    counter = 0
-    board.any?{|position| position == WIN_COMBINATIONS[counter]}
-    counter += 1
-  end
+  WIN_COMBINATIONS.detect? 
+ 
+ 
   board.all?{|positions| positions != " "}
   board.all?{|positions| positions == ("X" ||"O")}
 end
