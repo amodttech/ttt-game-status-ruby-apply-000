@@ -16,11 +16,8 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  board.select{|positions| positions == WIN_COMBINATIONS}
-  
-  
-  
-  
-  
-  
+    board.select do |positions|
+        positions.any?{|positions| == WIN_COMBINATIONS}
+        end
+    end
 end
