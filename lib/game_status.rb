@@ -21,6 +21,7 @@ def won?(board)
     (board[win[0]] == board[win[1]]) && (board[win[1]] == board[win[2]])
     board.all?{|positions| positions != " "}
     board.all?{|positions| positions == ("X" ||"O")}
+  end
 end
 
 
@@ -29,7 +30,6 @@ def won?(board)
     board[combo[0]] == board[combo[1]] &&
     board[combo[1]] == board[combo[2]] &&
     position_taken?(board, combo[0])
-  end
   end
 end
 
